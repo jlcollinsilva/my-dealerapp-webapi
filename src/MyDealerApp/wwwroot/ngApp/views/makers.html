@@ -1,0 +1,13 @@
+﻿<h2>Select a Maker</h2>
+
+<select class="inputCar" ng-model="controller.selectedMaker" 
+        ng-options="makers.name for makers in controller.makers"  
+        ng-change="controller.getCars()"></select>
+
+<ul>
+    <li ng-repeat="car in controller.makeCars" ng-click="controller.carDetail(car.id)">
+        
+        <img ng-src="{{car.imageUrl}}" class="imgCar" />
+        <a> {{car.shortDescription}} </a>
+    </li>
+</ul>

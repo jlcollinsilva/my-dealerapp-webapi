@@ -1,0 +1,14 @@
+﻿<h2>Enter your Search</h2>
+
+<input class="inputCar" ng-model="searchText"
+       ng-model-options="{debounce:1000}"/>
+
+<ul>
+    <li ng-repeat="car in controller.cars |filter:{shortDescription:searchText}" ng-click="controller.carDetail(car.id)">
+        <img ng-src="{{car.imageUrl}}" class="imgCar" />
+        <a /> {{car.shortDescription}} </a>
+     
+    </li>
+</ul>
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="MyDealerApp">
+<head>
+    <title>MyDealerApp</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/lib/angular-material/angular-material.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <base href="/" />
+</head>
+<body>
+    <div class="container descCar">
+        <h1>MyDealerApp</h1>
+        <div>
+            <a href="/">By Makers</a> /
+            <a href="/opensearch">Open Search</a>
+
+        </div>
+        <hr />
+
+        <ui-view></ui-view>
+    </div>
+
+    <!-- Library Files -->
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-resource/angular-resource.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.js"></script>
+    <script src="~/lib/angular-touch/angular-touch.js"></script>
+    <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- Required for angular-material -->
+    <script src="~/lib/angular-material/angular-material.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.js"></script>
+    <script src="~/lib/angular-aria/angular-aria.js"></script>
+    <script src="~/lib/angular-messages/angular-messages.js"></script>
+
+    <!-- App Files-->
+    <script src="~/ngapp/app.js"></script>
+    <script src="~/ngapp/controllers/controllers.js"></script>
+    <script src="~/ngapp/services/services.js"></script>
+
+
+</body>
+</html>
